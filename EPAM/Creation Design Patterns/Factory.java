@@ -1,14 +1,14 @@
 
 /*
  * Factory Method Pattern
- * meg kell hat·rozni egy inteface-t vagy absztrakt oszt·lyt hogy obijektumokat hozzunk lÈtre
- * Ès az aloszt·lyok dˆntik el, melyik oszt·lyok pÈld·nyosÌtanak
- * Az az, az aloszt·lyok felelˆsek az oszt·lyok pÈld·nyosÌt·s·ban
+ * meg kell hat√°rozni egy inteface-t vagy absztrakt oszt√°lyt hogy obijektumokat hozzunk l√©tre
+ * √©s az aloszt√°lyok d√∂ntik el, melyik oszt√°lyok p√©ld√°nyos√≠tanak
+ * Az az, az aloszt√°lyok felel√∂sek az oszt√°lyok p√©ld√°nyos√≠t√°s√°ban
  * 
- * Haszn·lat
- * Ha egy oszt·ly nem tudja, melyik aloszt·lyt kell majd lÈtrehozni
- * Ha egy oszt·ly azt akarja, hogy az aloszt·ly adja meg az objektumot
- * Amikor a sz¸lı oszt·ly az aloszt·lyban hozza lÈtre az obijektumot
+ * Haszn√°lat
+ * Ha egy oszt√°ly nem tudja, melyik aloszt√°lyt kell majd l√©trehozni
+ * Ha egy oszt√°ly azt akarja, hogy az aloszt√°ly adja meg az objektumot
+ * Amikor a sz√ºl≈ë oszt√°ly az aloszt√°lyban hozza l√©tre az obijektumot
  */
 
 package CreationDesignPatterns;
@@ -60,16 +60,16 @@ public class Factory {
 		
 		GetPlanFactory planFactory = new GetPlanFactory();  
         
-	      System.out.print("Tejet vagy kenyeret szeretnÈl v·s·rolni a Tescoban?: ");  
+	      System.out.print("Tejet vagy kenyeret szeretn√©l v√°s√°rolni a Tescoban?: ");  
 	      BufferedReader vasarlas = new BufferedReader(new InputStreamReader(System.in));  
 	  
 	      String kajaNeve = vasarlas.readLine();  
-	      System.out.print("H·ny darabot szeretnÈl v·s·rolni?: ");  
+	      System.out.print("H√°ny darabot szeretn√©l v√°s√°rolni?: ");  
 	      int db = Integer.parseInt(vasarlas.readLine());  
 	  
 	      Tesco kaja = planFactory.getKaja(kajaNeve);  
 	  
-	       System.out.print("A " + db + " " + kajaNeve + " ·ra forintban: ");    
+	       System.out.print("A " + db + " " + kajaNeve + " √°ra forintban: ");    
 	       kaja.getCost();
 	       kaja.nyugta(db);  
 
