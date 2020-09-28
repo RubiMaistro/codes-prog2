@@ -2,7 +2,7 @@ package Feladatok;
 
 class Madar {
 	public void repul() {
-		System.out.println("A " + super.getClass().getSimpleName() + " repül.");
+		System.out.println("A " + super.getClass().getSimpleName() + " repÃ¼l.");
 	};
 }
 
@@ -16,7 +16,7 @@ class Golya extends Madar {};
 class Struc extends Madar {};
 
 
-public class LSPsértés {
+public class LSPsÃ©rtÃ©s {
 
 	public static void main(String[] args) {
 		
