@@ -1,8 +1,5 @@
-#include <iostream>
-#include <random>
-#include <ctime>
-#include <math.h>
-//#include <pthread.h>
+#include <iostream>;
+#include <random>;
 
 using namespace std;
 
@@ -13,7 +10,6 @@ public:
 	double tarolt;
 
 	PolarGen() {
-		srand(time(NULL));
 		nincsTarolt = true;
 	}
 
@@ -23,8 +19,8 @@ public:
 			double n1, n2, v1, v2, s;
 
 			do {
-				n1 = rand() / (RAND_MAX + 1.0);
-				n2 = rand() / (RAND_MAX + 1.0);
+				n1 = rand();
+				n2 = rand();
 
 				v1 = 2 * n1 - 1;
 				v2 = 2 * n2 - 1;
@@ -47,14 +43,17 @@ public:
 };
 
 
-int main(int argc, char **argv) {
+
+
+int main() {
 
 	PolarGen gen;
 
 	for (int i = 0; i < 10; i++) {
-		cout << gen.kovetkezo()<<"\n";
+		cout<<gen.kovetkezo();
 
 	}
 
 	return 0;
 }
+
