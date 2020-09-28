@@ -7,7 +7,7 @@ class Madar {
 public:
 	void fly(string nev) {
 		nev = nev.erase(0, 6);
-		cout << "A " << nev << " repül.\n";
+		cout << "A " << nev << " repÃ¼l.\n";
 	} 
 
 	string nev = typeid(Madar).name();
