@@ -1,7 +1,7 @@
 /*
- * A program 10 sz·mot fog lÈtrehozni vÈletlenszer˚en.
+ * A program 10 sz√°mot fog l√©trehozni v√©letlenszer≈±en.
  * 
- * A sz·mok lÈtrehoz·s·hoz a pol·rtranszform·ciÛt fogja haszn·lja a program.
+ * A sz√°mok l√©trehoz√°s√°hoz a pol√°rtranszform√°ci√≥t fogja haszn√°lja a program.
  * 
  */
 package Feladatok;
