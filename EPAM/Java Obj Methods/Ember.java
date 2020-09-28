@@ -77,7 +77,7 @@ public class Ember {
 		
 		Human Ati = new Human("Attila", 22);
 		Human Attila = (Human)Ati.clone();
-		Human Laci = new Human("László", 21);
+		Human Laci = new Human("LÃ¡szlÃ³", 21);
 		
 		
 		Laci.first.Name = "Nagy";
