@@ -33,7 +33,7 @@
             }
 
             tm[3][0] = 42.0;
-            (*(tm + 3))[1] = 43.0;	// mi van, ha itt hiányzik a külsõ ()
+            (*(tm + 3))[1] = 43.0;	// mi van, ha itt hiÃ¡nyzik a kÃ¼lsÃµ ()
             *(tm[3] + 2) = 44.0;
             *(*(tm + 3) + 3) = 45.0;
 
