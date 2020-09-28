@@ -22,7 +22,7 @@ public class ParentChild {
 		parent.parent();
 		child.parent();
 		child.child();
-		// Nem látja a szülû osztály a gyerek osztály függvényeit.
+		// Nem lÃ¡tja a szÃ¼lÃ» osztÃ¡ly a gyerek osztÃ¡ly fÃ¼ggvÃ©nyeit.
 		//parent.child();
 
 	}
