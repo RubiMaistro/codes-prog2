@@ -11,11 +11,10 @@ abstract class Targy {
 	abstract void getHely();
 	abstract int getRand();
 	
-		
 	public void eredmeny(String muvelet, String nev) {
 		if( muvelet.equalsIgnoreCase("FELVESZ") ) {
 			if( getRand() < (csoport*ferohely ))
-				System.out.println("Sikeresen felvetted a " + nev + " tárgyat a " + (int) (Math.random() * (csoport - 1) + 1 ) + ". csoportba.");
+				System.out.println("Sikeresen felvetted a " + nev + " tÃ¡rgyat a " + (int) (Math.random() * (csoport - 1) + 1 ) + ". csoportba.");
 			else 
 				System.out.println("A kurzusok beteltek.");
 			
@@ -24,15 +23,11 @@ abstract class Targy {
 			}
 		}
 		else if(muvelet.equalsIgnoreCase("LEAD")) {
-			System.out.println("Sikeresen leadtad a " + (int) (Math.random() * (csoport - 1) + 1 ) + ". " + nev + " csoport tárgyát.");
+			System.out.println("Sikeresen leadtad a " + (int) (Math.random() * (csoport - 1) + 1 ) + ". " + nev + " csoport tÃ¡rgyÃ¡t.");
 		}
 		else 
-			System.out.println("Nincs ilyen parancs. Próbáld újra.");
-			
+			System.out.println("Nincs ilyen parancs. PrÃ³bÃ¡ld Ãºjra.");	
 	}
-	
-	
-	
 }
 
 class Prog2 extends Targy {
@@ -55,7 +50,6 @@ class WebTech extends Targy {
 	}
 }
 
-
 class getTargyNev {
 	
 	public Targy getName( String name ) {
@@ -76,32 +70,27 @@ class getTargyNev {
 			else if(name.equalsIgnoreCase("WEBTECH")) {
 				return new WebTech();
 			} 
+		} else {	
+			System.out.println("Helytelen tÃ¡rgynÃ©v vagy mÃ»velet.");	
 		}
-		else {
-				System.out.println("Helytelen tárgynév vagy mûvelet.");
-				
-			}
 		return null;
-		
 	}
 }
-
 
 public class Targyfelvetel {
 	
 	public static void main(String[] args) throws IOException {
 		
 		getTargyNev targyMelyik = new getTargyNev();
-		
 		BufferedReader targyfelvetel = new BufferedReader(new InputStreamReader(System.in));
 		
-		System.out.println("Tárgyfelvétel\n");
-		System.out.println("Ha végeztél ird be az 'exit' kilcsszót.");
+		System.out.println("TÃ¡rgyfelvÃ©tel\n");
+		System.out.println("Ha vÃ©geztÃ©l ird be az 'exit' kilcsszÃ³t.");
 		boolean fut;
 		
 		do {
 			
-			System.out.println("Ird be egy tárgy nevét ( prog2 vagy webtech ) : ");
+			System.out.println("Ird be egy tÃ¡rgy nevÃ©t ( prog2 vagy webtech ) : ");
 			String targynev = targyfelvetel.readLine();
 			
 			System.out.println("Felvesz vagy Lead?: ");
@@ -113,15 +102,14 @@ public class Targyfelvetel {
 			t.getHely();
 			t.eredmeny(muvelet,targynev);
 			
-			System.out.println("Ha nem akarsz további mûveleteket végezni\nird be az 'exit' kulcsszót egyébként nyomj entert:");
+			System.out.println("Ha nem akarsz tovÃ¡bbi mÃ»veleteket vÃ©gezni\nird be az 'exit' kulcsszÃ³t egyÃ©bkÃ©nt nyomj entert:");
 			String exit = targyfelvetel.readLine();
 			if(exit.equalsIgnoreCase("EXIT"))
 				fut = false;
 			else 
 				fut = true;
-			
 		} while ( fut == true);
 		
-		System.out.println("A tárgyfelvétel megtörtént.");
+		System.out.println("A tÃ¡rgyfelvÃ©tel megtÃ¶rtÃ©nt.");
 	}
 }
