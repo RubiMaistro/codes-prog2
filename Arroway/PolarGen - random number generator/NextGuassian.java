@@ -1,5 +1,5 @@
 /*
- * A PolárGenerátor beépitett változata.
+ * A PolÃ¡rGenerÃ¡tor beÃ©pitett vÃ¡ltozata.
  * 
  * */
 
