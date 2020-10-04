@@ -98,9 +98,11 @@ public class Targyfelvetel {
 			
 			Targy t = targyMelyik.getName(targynev);
 			
-			t.getRand();
-			t.getHely();
-			t.eredmeny(muvelet,targynev);
+			if(targynev != null) {
+				t.getRand();
+				t.getHely();
+				t.eredmeny(muvelet,targynev);
+			}
 			
 			System.out.println("Ha nem akarsz további mûveleteket végezni\nird be az 'exit' kulcsszót egyébként nyomj entert:");
 			String exit = targyfelvetel.readLine();
