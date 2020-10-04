@@ -98,7 +98,7 @@ public class Targyfelvetel {
 			
 			Targy t = targyMelyik.getName(targynev);
 			
-			if(targynev != null) {
+			if( t != null ){
 				t.getRand();
 				t.getHely();
 				t.eredmeny(muvelet,targynev);
